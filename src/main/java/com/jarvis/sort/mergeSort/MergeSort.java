@@ -26,7 +26,7 @@ public class MergeSort {
      * @param uppperBound
      */
     private void recursiveMergeSort(int[] workSpace,int lowerBound,int uppperBound){
-        if(lowerBound>=uppperBound){ // 只有一个元素时
+        if(lowerBound==uppperBound){ // 只有一个元素时
             return;
         }else {
             int mid=(uppperBound+lowerBound)/2;
@@ -54,13 +54,13 @@ public class MergeSort {
         int j=0; //workSpace的下标指针
         int n=upperBound-lowerBound+1; //归并的元素总数
 
-        while(lowBegin<=loeEnd&&highBegin<=highEnd){
-            if(array[lowBegin]<array[highBegin]){ //将两者较小的那个放入workSpace
-                workSpace[j++]=array[lowBegin++];
-            }else {
-                workSpace[j++]=array[highBegin++];
+        while(lowBegin<=loeEnd&&highBegin<=highEnd) {
+            if (array[lowBegin] < array[highBegin]) { //将两者较小的那个放入workSpace
+                workSpace[j++] = array[lowBegin++];
+            } else {
+                workSpace[j++] = array[highBegin++];
             }
-
+        }
             while(lowBegin<=loeEnd){
                 workSpace[j++]=array[lowBegin++];
             }
@@ -71,7 +71,6 @@ public class MergeSort {
             for(j=0;j<n;j++){ //将归并好的元素复制到array中
                 array[lowerBound++]=workSpace[j];
             }
-        }
     }
 
     public void display(){

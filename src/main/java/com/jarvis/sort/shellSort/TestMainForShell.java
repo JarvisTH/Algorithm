@@ -1,13 +1,11 @@
 package com.jarvis.sort.shellSort;
 
-import java.util.regex.Matcher;
-
 public class TestMainForShell {
     public static void main(String[] args){
-        int[] array=new int[1000];
+        int[] array=new int[100];
 
         for(int i=0;i<array.length;i++){
-            array[i]=(int)(Math.random()*1000);
+            array[i]=(int)(Math.random()*100);
         }
 
         ShellSort shellSort=new ShellSort(array);
