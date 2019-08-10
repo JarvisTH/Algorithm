@@ -37,8 +37,6 @@ public class MergeSort {
         }
     }
 
-
-    //bug
     /**
      * 对数组array的两段进行合并
      * @param workSpace
@@ -73,6 +71,9 @@ public class MergeSort {
             }
     }
 
+    /**
+     * 打印
+     */
     public void display(){
         for(int i=0;i<array.length;i++){
             System.out.print(array[i]+"\t");
