@@ -62,7 +62,7 @@ public class InsertionSort {
     }
 
     /**
-     *
+     *二分查找
      */
     public int binaySearch(int lowerBound,int upperBound,int target){
         int curIndex;

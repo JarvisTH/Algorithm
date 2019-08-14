@@ -1,7 +1,5 @@
 package com.jarvis.sort.heapSort;
 
-import java.util.regex.Matcher;
-
 public class HeapSort {
     int[] array;
 

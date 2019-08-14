@@ -47,6 +47,9 @@ public class ShellSort {
         }
     }
 
+    /**
+     * 打印
+     */
     public void display(){
         for(int i=0;i<array.length;i++){
             System.out.print(array[i]+"\t");

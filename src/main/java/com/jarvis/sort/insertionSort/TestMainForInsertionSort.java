@@ -12,6 +12,6 @@ public class TestMainForInsertionSort {
         System.out.println("排序前：");
         insertionSort.display();
         System.out.println("排序后：");
-        insertionSort.binaryInsertionSort();
+        insertionSort.two_wayInsertionSort();
     }
 }
